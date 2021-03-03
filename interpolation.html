@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- use string interpolation -->
+    <div id="app">
+        
+        <h1>{{ message }}</h1>
+        <h1>{{ number ** 3 }}</h1>
+        <h1>{{ isActive ? 'is active' : 'is not active'}}</h1>
+        <h1>{{ message.split('').reverse('').join('') }}</h1>
+    
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
+    <script>
+        // instantiate vue object/ vue model
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                message: "Hello, World",
+                number: 10,
+                isActive: true,
+            }
+        })
+
+    </script>
+    
+    
+    <title>First Vue App</title>
+</head>
+<body>
+   
+</body>
+</html>
