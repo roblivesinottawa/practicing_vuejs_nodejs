@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vue": "vue",
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "vue-cli": "^2.9.6"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.7"
   }
 }
